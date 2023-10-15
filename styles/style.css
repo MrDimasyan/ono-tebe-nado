@@ -56,9 +56,8 @@
 }
 
 .tel, .mail {
-  display: inline-block;  
+  display: inline-block;
   text-underline-offset: 4px;
-
 }
 
 /* Сексция hero */
@@ -186,7 +185,7 @@
 
 .card_type_picture {
   background: url(../images/card-lot-03.jpg) no-repeat;
-  background-size: contain;  
+  background-size: contain;
 }
 
 .card {
