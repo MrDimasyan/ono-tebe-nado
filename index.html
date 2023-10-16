@@ -35,10 +35,10 @@
           
           <!--Дивы добавил для того, чтобы они были флексами, а внутри тег а стал инлайн для бордера-->
 
-          <a href="tel:+99995555555" class="tel">+9 999 555 5555</a>
+          <a href="tel:+99995555555" class="contacts">+9 999 555 5555</a>
         </div>
         <div>
-          <a href="mailto:info@sobaka.ge" class="mail">info@sobaka.ge</a>
+          <a href="mailto:info@sobaka.ge" class="contacts">info@sobaka.ge</a>
         </div>
         <p class="street">наб. Принсенграхт 263-265, Амстердам</p>
       </address>
@@ -49,26 +49,26 @@
         <div class="overlay">
         </div>
           <h1 class="cover__title">
-            <span class="accent-span aligned-text letter-spacing-extended-s">О<span class="letter-spacing-extended-m">но</span></span>
-            <span class="accent-span aligned-text_center letter-spacing-extended-s">Те<span class="letter-spacing-extended-m">бе</span></span>
-            <span class="accent-span aligned-text_right letter-spacing-extended-m">Н<span class="letter-spacing-extended-s">ад</span><span class="no-letter-spacing">о</span></span>
+            <span class="aligned-text letter-spacing-extended-small">О<span class="letter-spacing-extended-medium">но</span></span>
+            <span class="aligned-text_center letter-spacing-extended-small">Те<span class="letter-spacing-extended-medium">бе</span></span>
+            <span class="aligned-text_right letter-spacing-extended-medium">Н<span class="letter-spacing-extended-small">ад</span><span class="no-letter-spacing">о</span></span>
           </h1>
           <div class="cover__description">
             <p class="cover__description-text">
               Аукцион вещей, в которые никто не верил
             </p>
-            <button class="bet-button">Сделать ставку</button>
+            <button type="button" class="bet-button">Сделать ставку</button>
           </div>
       </section>
 
       <section class="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item card_type_film">
-            <div class="overlay">
-            </div>
+          <li class="lots__card-list-item">
             <a href="#" class="card-link">
-              <article class="card">
+              <article class="card card_type_film">
+                <div class="overlay">
+                </div>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -81,10 +81,10 @@
             </a>
           </li>
           <li class="lots__card-list-item card_type_book">
-            <div class="overlay">
-            </div>
             <a href="#" class="card-link">
-              <article class="card">
+              <article class="card card_type_book">
+                <div class="overlay">
+                </div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного
                   агента
@@ -100,11 +100,11 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item card_type_picture">
-            <div class="overlay">
-            </div>
+          <li class="lots__card-list-item">
             <a href="#" class="card-link">
-              <article class="card">
+              <article class="card card_type_picture">
+                <div class="overlay">
+                </div>
                   <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -148,8 +148,8 @@
 
     <footer class="footer">
       <address class="address footer__address">
-        <a href="tel:+99995555555" class="tel">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge" class="mail">info@sobaka.ge</a>
+        <a href="tel:+99995555555" class="contacts">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="contacts">info@sobaka.ge</a>
         <p class="street">наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="footer__menu">

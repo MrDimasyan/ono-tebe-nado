@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 93px 49px 95px 51px;
+  padding: 93px 50px 95px 50px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
@@ -29,6 +29,7 @@
 
 .header__link_active {
   text-decoration: none;
+  pointer-events: none;
 }
 
 .header__list-item_no-bullit {
@@ -55,9 +56,8 @@
   font-style: normal;
 }
 
-.tel,
-.mail {
-  display: inline-block;
+.contacts {
+  display: block;
   text-underline-offset: 4px;
 }
 
@@ -67,13 +67,13 @@
   position: relative;
   padding: 165px 50px 50px;
   background: url(../images/cover.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
   width: 100%;
   height: 100%;
   opacity: 0.6;
@@ -82,36 +82,31 @@
 
 .cover__title {
   position: relative;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 127px;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
+  line-height: 108%;
   text-transform: uppercase;
 }
 
-.accent-span {
-  display: block;
-}
-
-.aligned-text {
-  margin-bottom: 10px;
-}
 
 .aligned-text_center {
-  margin-bottom: 3px;
   text-align: center;
 }
 
 .aligned-text_right {
-  margin-bottom: 127px;
   text-align: end;
 }
 
-.letter-spacing-extended-s {
+.letter-spacing-extended-small {
   letter-spacing: 30px;
 }
 
-.letter-spacing-extended-m {
+.letter-spacing-extended-medium {
   letter-spacing: 60px;
 }
 
@@ -137,12 +132,18 @@
 
 .bet-button {
   justify-self: end;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   padding: 12px 32px;
   color: #fff;
+  font-family: Raleway, sans-serif;;
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.bet-button:hover {
+  color: #bbb;
 }
 
 /* Секция lots */
@@ -165,27 +166,10 @@
 }
 
 .lots__card-list-item {
-  position: relative;
   flex-grow: 1;
   flex-basis: 430px;
   min-height: 450px;
-  padding: 50px 40px;
   list-style: none;
-}
-
-.card_type_film {
-  background: url(../images/card-lot-01.jpg) no-repeat;
-  background-size: contain;
-}
-
-.card_type_book {
-  background: url(../images/card-lot-02.jpg) no-repeat;
-  background-size: contain;
-}
-
-.card_type_picture {
-  background: url(../images/card-lot-03.jpg) no-repeat;
-  background-size: contain;
 }
 
 .card {
@@ -195,7 +179,25 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  padding: 50px 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.card_type_film {
+  background: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background: url(../images/card-lot-03.jpg);
+}
+
+
 
 .card-link {
   color: #fff;
@@ -203,13 +205,17 @@
   text-underline-offset: 3px;
 }
 
-.card__title {
+.card__title {  
+  position: relative;
+  z-index: 1;
   font-size: 22px;
   text-decoration: underline;
   text-transform: uppercase;
 }
 
 .card__text {
+  position: relative;
+  z-index: 1;
   font-size: 20px;
 }
 
@@ -287,6 +293,7 @@
 
 .footer__social-list-item {
   height: 48px;
+  width: 48px;
   list-style: none;
 }
 
